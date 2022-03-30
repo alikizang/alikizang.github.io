@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.logo-home{
+    color: #000000;
+}
+
+.main{
+    max-width: 1011px;
+    margin: auto;
+    padding: 0 12px;
+}
+
+.hero{
+    width: 100%;
+    min-height: 564px;
+    /* background: url(img/bg1.jpg); */
+    background-size: cover;
+    padding-top: 35px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px;
+    max-width: 1082px;
+    margin: auto;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #fff;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #0faedf;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #47a5fd;
+    border: 2px solid #47a5fd;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #47a5fd;
+    color: #47a5fd;
+}
+.content{
+    top: 10%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1028px;
+    margin: auto;
+    position: relative;
+}
+.content .description{
+    max-width: 55%;
+}
+.content .profile{
+    width: 348px;
+    height: 348px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .profile img{
+    width: 100%;
+}
+
+.social-icons{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.icon-wrapper{
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    box-shadow: 0 0 8px 0 rgb(50 50 50 / 15%);
+    margin: 0 5px
+}
+
+.icon-wrapper.linkedin:hover{
+    box-shadow: 0 0 24px 0 #0a66c2
+}
+
+.icon-wrapper.kaggle:hover{
+    box-shadow: 0 0 24px 0 rgb(32, 190, 255);
+}
+
+.icon-wrapper.github:hover{
+    box-shadow: 0 0 24px 0 #4183c4
+}
+
+.icon-wrapper.facebook:hover{
+    box-shadow: 0 0 24px 0 #3b5998
+}
+.icon-wrapper.linkedin:hover svg{
+    fill: #0a66c2;
+}
+
+.icon-wrapper.kaggle:hover svg{
+    fill: rgb(32, 190, 255);;
+}
+
+.icon-wrapper.github:hover svg{
+    fill: #4183c4;
+}
+
+.icon-wrapper.facebook:hover svg{
+    fill: #3b5998;
+}
+
+.social-icons svg{
+    height: 71%;
+}
+
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #000000;
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
